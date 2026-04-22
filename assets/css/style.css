@@ -29,20 +29,19 @@ PLAN DU FICHIER :
 ═══════════════════════════════════════════════════════════════ */
 :root {
   /* ── Couleurs principales ── */
-  --bg-primary: #0f172a; /* Fond sombre principal */
-  --bg-secondary: #1e293b; /* Fond des cartes */
-  --bg-card: #1e293b; /* Fond des éléments en relief */
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-card: #1e293b;
 
-  --accent-color: #7c3aed; /* Violet — votre couleur signature */
-  --accent-light: #a78bfa; /* Violet clair — pour les textes sur fond sombre */
-  --accent-teal: #0d9488; /* Teal — couleur secondaire */
+  --accent-color: #7c3aed;
+  --accent-light: #a78bfa;
+  --accent-teal: #0ea5e9;
 
-  --text-primary: #f8fafc; /* Texte principal (blanc cassé) */
-  --text-secondary: #94a3b8; /* Texte secondaire (gris) */
-  --text-muted: #64748b; /* Texte discret */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
 
-  --border-color: #334155; /* Couleur des bordures */
-
+  --border-color: #334155;
   /* ── Typographie ── */
   --font-main: "Segoe UI", system-ui, -apple-system, sans-serif;
   --font-code: "Consolas", "Courier New", monospace;
@@ -91,6 +90,7 @@ body {
   color: var(--text-primary);
   line-height: 1.7;
   overflow-x: hidden; /* cache le défilement horizontal indésirable */
+  padding-top: 70px;
 }
 
 /* Liens : on enlève le soulignement par défaut */
@@ -165,12 +165,13 @@ ul {
   background-color: var(--accent-color);
   color: white;
   border-color: var(--accent-color);
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
 }
 .btn-primary:hover {
-  background-color: #6d28d9;
-  border-color: #6d28d9;
-  transform: translateY(-2px); /* léger soulèvement au survol */
-  box-shadow: 0 8px 25px rgba(124, 58, 237, 0.4);
+  background-color: var(--accent-color);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.4);
 }
 
 /* Bouton contour */
@@ -182,7 +183,8 @@ ul {
 .btn-outline:hover {
   background-color: var(--accent-color);
   color: white;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.4);
 }
 
 /* Petit bouton (pour les cartes projets) */
@@ -456,13 +458,14 @@ ul {
 }
 
 .skill-item {
-  margin-bottom: var(--spacing-md);
+   margin-bottom: 1.2rem;
 }
 
 .skill-header {
-  display: flex;
+   display: flex;
   justify-content: space-between;
-  margin-bottom: 8px;
+  align-items: center;
+  margin-bottom: 0.3rem;
 }
 .skill-name {
   font-weight: 600;
@@ -474,20 +477,21 @@ ul {
 
 /* La barre grise (fond) */
 .skill-bar {
-  height: 8px;
+  width: 100%;
+  height: 10px;
   background-color: var(--border-color);
-  border-radius: var(--radius-full);
+  border-radius: 999px;
   overflow: hidden;
+  margin-top: 0.5rem;
 }
 
 /* La barre colorée (progression) */
 /* Sa largeur est définie par JS en lisant data-level */
 .skill-progress {
-  height: 100%;
-  width: 0; /* démarre à 0, JS l'anime jusqu'à data-level */
-  background: linear-gradient(90deg, var(--accent-color), var(--accent-teal));
-  border-radius: var(--radius-full);
-  transition: width 1.2s ease-out; /* l'animation elle-même */
+    height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--accent-color), var(--accent-light));
+  border-radius: 999px;
 }
 
 /* ═══════════════════════════════════════════════════════════════
@@ -506,16 +510,16 @@ ul {
 }
 
 .project-card {
-  background-color: var(--bg-primary);
+   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  overflow: hidden; /* cache ce qui dépasse (overlay) */
-  transition: all var(--transition);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 .project-card:hover {
   transform: translateY(-8px);
   border-color: var(--accent-color);
-  box-shadow: 0 20px 40px rgba(124, 58, 237, 0.2);
+  box-shadow: 0 12px 30px rgba(124, 58, 237, 0.25);
 }
 
 /* Image du projet avec position relative pour l'overlay */
@@ -526,7 +530,7 @@ ul {
 }
 .project-image img {
   width: 100%;
-  height: 100%;
+  height: 220%;
   object-fit: cover;
   transition: transform var(--transition);
 }
