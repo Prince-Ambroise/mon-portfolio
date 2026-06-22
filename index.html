@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio de [Prince Ambroise]" />
+    <title>
+      Portfolio — [Prince Ambroise] - développeur web & technicien IT
+    </title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="navbar" id="navbar">
+      <nav class="nav-container">
+        <!-- Votre prénom/logo — remplacez le texte -->
+        <a href="#hero" class="nav-logo">Prince Ambroise<span>.</span></a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Bouton burger pour mobile (3 traits) -->
+        <button class="burger" id="burger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <p class="hero-subtitle">Bonjour, je suis</p>
+        <h1 class="hero-title">
+          Prince Ambroise <span class="highlight">Tshibangu</span>
+        </h1>
+        <p class="hero-role"></p>
+        <p class="hero-description">
+          Après une formation de préqualification aux métiers du numérique à l’AFPA de Brest, j’ai développé des compétences en HTML, CSS, JavaScript, PHP, MySQL, WordPress et Git/GitHub.
+
+Je souhaite aujourd’hui poursuivre mon parcours dans le développement web et intégrer la formation Développeur Web & Web Mobile.
+
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+          <a href="#contact" class="btn btn-outline">Me contacter</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- Votre photo — en attendant utilisez picsum.photos -->
+        <img
+          src="assets/images/profile_cropped.png"
+          alt="Photo de Prince Ambroise"
+          class="profile-photo"
+        />
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title">
+          À propos <span class="highlight">de moi</span>
+        </h2>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <!--
+          Racontez votre histoire en 3-5 phrases.
+          D'où venez-vous ? Pourquoi le numérique ?
+          Qu'est-ce qui vous motive ?
+          -->
+            <p>
+              Après une formation de préqualification aux métiers du numérique à l’AFPA de Brest, j’ai confirmé mon intérêt pour le développement web à travers plusieurs projets concrets.
+          
+            </p>
+            <p>
+              J’aime créer des sites web, résoudre des problèmes techniques et apprendre de nouveaux outils pour progresser dans le numérique.
+
+            </p>
+
+            <!-- Lien vers un CV PDF — mettez votre propre lien -->
+            <a
+              href="https://canva.link/303r8dctkcs6753"
+              class="btn btn-primary"
+              download
+            >
+              Télécharger mon CV
+            </a>
+          </div>
+
+          <!-- Quelques stats ou faits — modifiez les chiffres et labels -->
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Mois de formation</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Projets réalisés</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Motivé</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">∞</span>
+              <span class="stat-label">Curiosité</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="section-title">
+          Mes <span class="highlight">compétences</span>
+        </h2>
+
+        <div class="skills-grid">
+          <!-- Catégorie 1 -->
+          <div class="skill-category">
+            <h3>Développement web</h3>
+
+            <!--
+          data-level = le pourcentage de la barre (0 à 100)
+          Modifiez les noms et les pourcentages selon votre niveau réel.
+          Soyez honnête — un recruteur peut vérifier !
+          -->
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">HTML</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-level="65"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">CSS</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-level="50"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-percent">65%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-level="40"></div>
+              </div>
+            </div>
+          </div>
+          <!-- fin .skill-category -->
+
+          <!-- Catégorie 2 — modifiez selon vos compétences -->
+          <div class="skill-category">
+            <h3>Outils &amp;technologies </h3>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Git / GitHub</span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-level="70"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">PHP / MySQL</span>
+                <span class="skill-percent">60%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-level="55"></div>
+              </div>
+            </div>
+             <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">linux</span>
+                <span class="skill-percent">65%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-level="55"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">WordPress / Elementor</span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-level="80"></div>
+              </div>
+            </div>
+          </div>
+          <!-- fin .skill-category -->
+        </div>
+        <!-- fin .skills-grid -->
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="section-title">
+          Mes <span class="highlight">projets</span>
+        </h2>
+        <p class="section-subtitle">
+    Quelques projets réalisés durant ma formation et mes travaux personnels.
+        </p>
+
+        <div class="projects-grid">
+          <!-- Projet 1 — remplacez le contenu -->
+          <div class="project-card">
+            <div class="project-image">
+              <!--
+            Remplacez par une capture d'écran de votre projet.
+            Taille recommandée : 600x400px
+            -->
+              <img
+                src="assets/images/portfolio.jpg"
+                alt="Portfolio Personnel"
+              />
+              <!-- Overlay qui apparaît au survol -->
+              <div class="project-overlay">
+                <p class="project-description">
+                Site web personnel présentant mon parcours, mes compétences et mes projets réalisés durant ma formation.
+
+                </p>
+
+               <!-- <div class="project-links">
+                  <a href="https://github.com/Prince-Ambroise/mon-portfolio" class="btn btn-small" target="_blank">Voir le code</a>
+                  <a href="https://prince-ambroise.github.io/mon-portfolio/" class="btn btn-small btn-outline" target="_blank">Démo live</a>
+                </div>-->
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">
+                Portfolio Personnel
+              </h3>
+              <div class="project-tags">
+                <!-- Ajoutez les technologies utilisées -->
+                <span class="tag">html</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <!-- fin .project-card -->
+
+          <!-- Projet 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/images/carne de voyage.jpg"
+                alt="Projet 2 — [nom du projet]"
+              />
+              <div class="project-overlay">
+                <p class="project-description">
+                  Application web de gestion de voyages développée avec HTML, CSS, JavaScript, PHP et MySQL dans le cadre de la formation AFPA.
+                </p>
+               <!-- <div class="project-links">
+                  <a href="https://github.com/Prince-Ambroise/CARNET-VOYAGES" class="btn btn-small" target="_blank">Voir le code</a>
+                  <a href="https://github.com/Prince-Ambroise/CARNET-VOYAGES" class="btn btn-small btn-outline" target="_blank">GitHub</a>
+                </div> -->
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Carnet de Voyages</h3>
+              <div class="project-tags">
+                <span class="tag">html</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/images/elite-unlock.jpg"
+                alt="Projet 3 — "
+              />
+              <div class="project-overlay">
+                <p class="project-description">
+                  Site vitrine développé avec WordPress et Elementor pour présenter des services liés au sport, au bien-être et au développement personnel.
+                </p>
+                <div class="project-links">
+                  <a href="#" class="btn btn-small">Projet local</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Elite Unlocked</h3>
+              <div class="project-tags">
+                <span class="tag">WordPress</span>
+                <span class="tag">Elementor</span>
+                <span class="tag">Web Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fin .projects-grid -->
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">
+          Me <span class="highlight">contacter</span>
+        </h2>
+        <p class="section-subtitle">
+          Une question ? Une opportunité ? N'hésitez pas !
+        </p>
+
+        <div class="contact-grid">
+          <!-- Informations de contact -->
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">✉</div>
+              <div>
+                <h4>Email</h4>
+                <!-- Remplacez par votre email -->
+                <p>princeambroise24@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h4>Localisation</h4>
+
+                <p>Brest, France</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">💼</div>
+              <div>
+                <h4>LinkedIn</h4>
+                <!-- Votre profil LinkedIn -->
+                <p>
+                  <a href="https://www.linkedin.com/in/prince-ambroise-3967a8393" target="_blank">
+    Voir mon profil LinkedIn
+</a>
+              
+                    
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulaire -->
+          <!--
+        NOTE : on n'utilise pas <form action="..."> car on valide en JS.
+        Pour un vrai envoi d'email, inscrivez-vous sur formspree.io
+        et remplacez action="#" par votre URL Formspree.
+        -->
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Votre nom</label>
+              <input
+                type="text"
+                id="name"
+                name="Tshibangu"
+                placeholder="Prénom Nom"
+                required
+              />
+              <!-- Le message d'erreur est affiché/caché par JS -->
+              <span class="error-message" id="name-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Votre email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="vous@exemple.com"
+                required
+              />
+              <span class="error-message" id="email-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Sujet</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Objet de votre message"
+                required
+              />
+              <span class="error-message" id="subject-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Votre message ici..."
+                required
+              ></textarea>
+              <span class="error-message" id="message-error"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              Envoyer le message
+            </button>
+
+            <!-- Message de succès — caché par défaut, visible après envoi -->
+            <div class="success-message" id="success-message">
+              ✅ Message envoyé ! Je vous répondrai sous 48h.
+            </div>
+          </form>
+        </div>
+        <!-- fin .contact-grid -->
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <p>
+          <!-- Remplacez par votre prénom et l'année en cours -->
+          © 2026 <span class="highlight">Tshibangu Prince Ambroise</span>
+          — Portfolio Développeur Web
+        </p>
+        <!-- Liens vers vos profils — ajoutez ou supprimez -->
+        <div class="footer-links">
+          <a  href="https://github.com/Prince-Ambroise" target="_blank">GitHub</a>
+          <a  href="https://www.linkedin.com/in/prince-ambroise-3967a8393" target="_blank">LinkedIn</a>
+          <a href="mailto:princeambroise24@gmail.com">Email</a>
+        </div>
+      </div>
+    </footer>
+    <button class="back-to-top" id="back-to-top" aria-label="Retour en haut">
+      ↑
+    </button>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
